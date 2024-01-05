@@ -44,11 +44,17 @@
         </clipPath>
       </defs>
     </symbol>
-    <symbol id="tap">
+    <symbol id="tap"
+      width="13"
+      height="11"
+      viewBox="0 0 13 11"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="5" y="7.5" width="89.9998" height="25" fill="#21B769"/>
-          <rect x="22.5" y="37.5" width="54.9999" height="25" fill="#21B769"/>
-          <rect x="37.4995" y="67.5" width="25" height="25" fill="#21B769"/>
+          <rect x="4.99976" y="7.5" width="89.9998" height="25" fill="white"/>
+          <rect x="22.4998" y="37.5" width="54.9999" height="25" fill="white"/>
+          <rect x="37.4998" y="67.5" width="25" height="25" fill="white"/>
       </svg>
     </symbol>
     <symbol

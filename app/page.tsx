@@ -123,18 +123,7 @@ export default function Page() {
 				<Link href='/work'>work</Link>
 				{` build slick things at `}
 				<span className='not-prose'>
-					<Badge href='https://tapinvest.in'>
-						<svg
-							width='13'
-							height='11'
-							role='img'
-							aria-label='Tap logo'
-							className='inline-flex mr-1'
-						>
-							<use href='/sprite.svg#tap' />
-						</svg>
-						Tap Invest
-					</Badge>
+					<Badge href='https://tapinvest.in'>Tap Invest</Badge>
 				</span>
 				{`, where we're democratising alternate investment methods. Before this, I've helped brands like <CapXFi> and <Nothing> build scalable products, and fast.`}
 			</p>
@@ -161,13 +150,13 @@ export default function Page() {
 				</li>
 				<li>
 					<a
-						className='flex items-center text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-100 transition-all pointer-events-none'
+						className='flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all'
 						rel='noopener noreferrer'
 						target='_blank'
-						href='https://leerob.substack.com'
+						href='https://soorajsingh.substack.com'
 					>
 						<ArrowIcon />
-						<p className='h-7 ml-2'>get email updates (coming soon!)</p>
+						<p className='h-7 ml-2'>get email updates</p>
 					</a>
 				</li>
 			</ul>
