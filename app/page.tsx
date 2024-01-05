@@ -174,6 +174,14 @@ export default function Page() {
 				</p>
 			</div>
 
+			<div className='prose prose-neutral dark:prose-invert'>
+				<article className={'text-xs'}>
+					This page is served statically using{' '}
+					<Link href={'nextjs.org'}>Next.js</Link> and{' '}
+					<Link href={'vercel.com'}>Vercel</Link>.
+				</article>
+			</div>
+
 			<ul className='flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300'>
 				<li>
 					<a
