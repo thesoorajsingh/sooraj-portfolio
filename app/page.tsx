@@ -11,6 +11,9 @@ import meetups from 'public/images/home/meetups.jpg';
 import vercel from 'public/images/home/vercel.jpg';
 import avatar from 'app/avatar.jpg';
 import ViewCounter from 'app/blog/view-counter';
+import capx from 'public/capxico.png';
+import nothing from 'public/nothingico.webp';
+import tap from 'public/tapico.png';
 import {
 	getLeeYouTubeSubs,
 	getVercelYouTubeSubs,
@@ -121,18 +124,53 @@ export default function Page() {
 			<p className='prose prose-neutral dark:prose-invert'>
 				{`I'm a frontend engineer, optimist, and a coffee enthusiast. I currently `}
 				<Link href='/work'>work</Link>
-				{` build slick things at `}
+				{` at `}
 				<span className='not-prose'>
-					<Badge href='https://tapinvest.in'>Tap Invest</Badge>
+					<Badge href='https://tapinvest.in'>
+						<Image
+							src={tap}
+							alt='Tap Invest'
+							height={16}
+							width={16}
+							className={'pr-1'}
+						/>
+						Tap Invest
+					</Badge>
 				</span>
-				{`, where we're democratising alternate investment methods. Before this, I've helped brands like <CapXFi> and <Nothing> build scalable products, and fast.`}
+				{`, where we're democratising alternate investment methods. Before this, I've helped brands like `}
+				<span className='not-prose'>
+					<Badge href='https://capx.fi'>
+						<Image
+							src={capx}
+							alt='CapXFi'
+							height={16}
+							width={16}
+							className={'pr-1'}
+						/>
+						CapXFi
+					</Badge>
+				</span>
+				{` and `}
+				<span className='not-prose'>
+					<Badge href='https://nothing.tech'>
+						<Image
+							src={nothing}
+							alt='Nothing'
+							height={16}
+							width={16}
+							className={'pr-1'}
+						/>
+						Nothing
+					</Badge>
+				</span>
+				{` build scalable products, fast.`}
 			</p>
 
 			<div className='prose prose-neutral dark:prose-invert'>
 				<p>
-					I've been trying my hand at writing articles that aim at helping
-					people be better engineers regardless of their career choices. I'll
-					probably publish them soon enough
+					I've been trying my hand at <Link href='/blog'>writing</Link> articles
+					that aim at helping people be better engineers regardless of their
+					career choices. I'll probably publish them soon enough
 				</p>
 			</div>
 
