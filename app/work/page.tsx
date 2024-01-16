@@ -92,8 +92,10 @@ export default function WorkPage() {
 					along with one other engineer that allow users to trade their tokens
 					in a secondary market. <br />
 					Please{' '}
-					<Link href={'mailto:soorajsingh.work@gmail.com'}>reach out</Link> to
-					know more about these projects {':)'}
+					<Link href={'mailto:soorajsingh.work@gmail.com'} target='_blank'>
+						reach out
+					</Link>{' '}
+					to know more about these projects {':)'}
 				</p>
 				<hr className='my-6 border-neutral-100 dark:border-neutral-800' />
 				<h2 className='font-medium text-xl mb-1 tracking-tighter'>
