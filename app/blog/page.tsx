@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
 	title: 'Blog',
-	description: 'Read my thoughts on software development, design, and more.',
+	description: 'Read my thoughts on engineering, design and product.',
 };
 
 export default function BlogPage() {
