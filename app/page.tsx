@@ -1,24 +1,11 @@
 import { Suspense } from 'react';
-import { unstable_noStore as noStore } from 'next/cache';
 import Link from 'next/link';
 import Image from 'next/image';
-import smashing from 'public/images/home/smashing.jpg';
-import summit from 'public/images/home/summit.jpg';
-import reactathon from 'public/images/home/reactathon.jpg';
-import ship from 'public/images/home/ship.jpg';
-import filming from 'public/images/home/filming.jpg';
-import meetups from 'public/images/home/meetups.jpg';
-import vercel from 'public/images/home/vercel.jpg';
-import avatar from 'app/avatar.jpg';
 import ViewCounter from 'app/blog/view-counter';
 import capx from 'public/capxico.png';
 import nothing from 'public/nothingico.webp';
 import tap from 'public/tapico.png';
-import {
-	getLeeYouTubeSubs,
-	getVercelYouTubeSubs,
-	getViewsCount,
-} from 'app/db/queries';
+import { getViewsCount } from 'app/db/queries';
 
 function Badge(props) {
 	return (
