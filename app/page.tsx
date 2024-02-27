@@ -177,8 +177,14 @@ export default function Page() {
 			<div className='prose prose-neutral dark:prose-invert'>
 				<article className={'text-xs'}>
 					This page is served statically using{' '}
-					<Link href={'nextjs.org'}>Next.js</Link> and{' '}
-					<Link href={'vercel.com'}>Vercel</Link>.
+					<Link href={'https://www.nextjs.org'} target={'_blank'}>
+						Next.js
+					</Link>{' '}
+					and{' '}
+					<Link href={'https://www.vercel.com'} target={'_blank'}>
+						Vercel
+					</Link>
+					.
 				</article>
 				<article className={'text-xs sm:hidden lg:block'}>
 					Press ⌘+K to navigate with your keyboard
