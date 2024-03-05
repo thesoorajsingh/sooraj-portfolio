@@ -13,7 +13,7 @@
 		"@types/node": "20.10.0",
 		"@types/react": "18.2.38",
 		"@types/react-dom": "18.2.17",
-		"@vercel/analytics": "^1.1.1",
+		"@vercel/analytics": "^1.2.2",
 		"@vercel/postgres": "^0.5.1",
 		"@vercel/speed-insights": "^0.0.5",
 		"autoprefixer": "^10.4.16",
