@@ -124,11 +124,3 @@ export default function Blog({ params }) {
 		</section>
 	);
 }
-
-let incrementViews = cache(increment);
-
-async function Views({ slug }: { slug: string }) {
-	let views = await getViewsCount();
-	incrementViews(slug);
-	return <ViewCounter allViews={views} slug={slug} />;
-}
