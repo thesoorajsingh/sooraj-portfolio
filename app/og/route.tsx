@@ -41,17 +41,17 @@ export async function GET(req: NextRequest) {
 					{postTitle}
 				</div>
 			</div>
-		),
-		{
-			width: 1920,
-			height: 1080,
-			fonts: [
-				{
-					name: 'Kaisei Tokumin',
-					data: fontData,
-					style: 'normal',
-				},
-			],
-		}
+			// {
+			// 	width: 1920,
+			// 	height: 1080,
+			// 	fonts: [
+			// 		{
+			// 			name: 'Kaisei Tokumin',
+			// 			data: fontData,
+			// 			style: 'normal',
+			// 		},
+			// 	],
+			// }
+		)
 	);
 }
