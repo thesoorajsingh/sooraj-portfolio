@@ -21,7 +21,7 @@ export async function generateMetadata({
 		summary: description,
 		image,
 	} = post.metadata;
-	let ogImage = `https://thesoorajsingh.me/og-bg.png`;
+	let ogImage = `https://thesoorajsingh.me/ogs/og-bg-blog-${post.slug}.png`;
 
 	return {
 		title,
