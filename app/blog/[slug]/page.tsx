@@ -102,12 +102,12 @@ export default function Blog({ params }) {
 						dateModified: post.metadata.publishedAt,
 						description: post.metadata.summary,
 						image: post.metadata.image
-							? `https://leerob.io${post.metadata.image}`
-							: `https://leerob.io/og?title=${post.metadata.title}`,
-						url: `https://leerob.io/blog/${post.slug}`,
+							? `https://thesoorajsingh.me${post.metadata.image}`
+							: `https://thesoorajsingh.me/og?title=${post.metadata.title}`,
+						url: `https://thesoorajsingh.me/blog/${post.slug}`,
 						author: {
 							'@type': 'Person',
-							name: 'Lee Robinson',
+							name: 'Sooraj Singh',
 						},
 					}),
 				}}
