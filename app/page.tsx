@@ -5,6 +5,7 @@ import ViewCounter from 'app/blog/view-counter';
 import capx from 'public/capxico.png';
 import nothing from 'public/nothingico.webp';
 import tap from 'public/tapico.png';
+import thena from 'public/thena.png';
 import { getViewsCount } from 'app/db/queries';
 
 function Badge(props) {
@@ -105,13 +106,25 @@ async function Views({ slug }: { slug: string }) {
 export default function Page() {
 	return (
 		<section>
-			<h1 className='font-medium text-2xl mb-8 tracking-tight font-["monospace"]'>
-				sup, i'm sooraj 👋
+			<h1 className='font-medium text-2xl mb-8 leading-16 font-["monospace"] flex items-center gap-1'>
+				sup, i'm sooraj 👋 and i'm{' '}
+				<Link
+					href={'https://read.cv/thesoorajsingh'}
+					target='_blank'
+					className='underline hover:text-green-300 transition-all duration-500 ease-in-out'
+				>
+					{' '}
+					open to work!
+				</Link>{' '}
+				<span className='relative flex h-3 w-3 -top-2 -right-1'>
+					<span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75'></span>
+					<span className='relative inline-flex rounded-full h-3 w-3 bg-green-500'></span>
+				</span>
 			</h1>
 			<p className='prose prose-neutral dark:prose-invert'>
-				{`I'm a frontend engineer, optimist, and a coffee enthusiast. I currently `}
-				<Link href='/work'>work</Link>
-				{` at `}
+				{`I'm a frontend engineer, optimist, and a coffee enthusiast. I've `}
+				<Link href='/work'>worked</Link>
+				{` with multiple startups and helped them build products that scale, like `}
 				<span className='not-prose'>
 					<Badge href='https://tapinvest.in'>
 						<Image
@@ -124,7 +137,22 @@ export default function Page() {
 						Tap Invest
 					</Badge>
 				</span>
-				{`, where we're democratising alternate investment methods. Before this, I've helped brands like `}
+				{` where we were democratising alternate investment methods`} {` `}
+				{`and `}
+				<span className='not-prose'>
+					<Badge href='https://thena.ai'>
+						<Image
+							src={thena}
+							alt='Thena AI'
+							height={18}
+							width={18}
+							className={'pr-1'}
+						/>
+						Thena
+					</Badge>
+				</span>
+				{` where we were solving slack support at scale. `}
+				{`Before this, I've helped brands like `}
 				<span className='not-prose'>
 					<Badge href='https://capx.fi'>
 						<Image

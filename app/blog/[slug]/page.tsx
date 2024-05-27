@@ -83,7 +83,8 @@ export default function Blog({ params }) {
 	let post = getBlogPosts().find((post) => post.slug === params.slug);
 
 	if (!post) {
-		notFound();
+		// notFound();
+		return <p>i didn't write this 🤨 (yet)</p>;
 	}
 
 	return (

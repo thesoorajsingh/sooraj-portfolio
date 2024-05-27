@@ -33,11 +33,33 @@ export default function WorkPage() {
 					them build experiences that are fast, scalable and delightful.
 				</p>
 				<hr className='my-6 border-neutral-100 dark:border-neutral-800' />
+				<h2 className='font-medium text-xl mb-1 tracking-tighter'>Thena AI</h2>
+				<p className='text-neutral-600 dark:text-neutral-400 text-sm'>
+					Software Engineer 2, Mar 2024 - July 2024
+				</p>
+				<p>
+					Worked towards a complete rewrite of the product over a single sprint.
+				</p>
+				<ul>
+					<li>
+						Increased performance and efficiency of newer version of the
+						application by 5x.
+					</li>
+					<li>
+						Handled data fetching and updating optimistically using IndexedDB
+						and efficient in-memory caching.
+					</li>
+					<li>
+						Rebuilt and re-architected UI components across the board from Ant
+						Design to ShadcnUI with Tailwind, along with react-hook-form and zod
+						validations.
+					</li>
+				</ul>
 				<h2 className='font-medium text-xl mb-1 tracking-tighter'>
 					Tap Invest
 				</h2>
 				<p className='text-neutral-600 dark:text-neutral-400 text-sm'>
-					Software Engineer - Frontend
+					Software Engineer - Frontend, Sept 2022 - Mar 2024
 				</p>
 				<ul>
 					<li>

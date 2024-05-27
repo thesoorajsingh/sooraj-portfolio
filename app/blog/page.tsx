@@ -41,7 +41,9 @@ export default function BlogPage() {
 				))}
 			<hr className={`text-neutral-400`} />
 			<p className={'mt-4'}>
-				i write every week about something that helped me grow. follow along on{' '}
+				i try to write time to time about something or someone that helped me
+				grow.
+				<br /> follow along on{' '}
 				<Link
 					className={
 						'underline hover:text-orange-400 transition-all duration-300'
