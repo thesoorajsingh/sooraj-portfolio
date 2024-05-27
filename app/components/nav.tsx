@@ -10,6 +10,9 @@ const navItems = {
 	'/blog': {
 		name: 'blog',
 	},
+	'/people': {
+		name: 'people',
+	},
 };
 
 export function Navbar() {

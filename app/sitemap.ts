@@ -1,7 +1,5 @@
-import { getBlogPosts } from 'app/db/blog';
-
 export default async function sitemap() {
-	let routes = ['', '/blog', '/work'].map((route) => ({
+	let routes = ['', '/blog', '/work', '/people'].map((route) => ({
 		url: `https://thesoorajsingh.me${route}`,
 		lastModified: new Date().toISOString().split('T')[0],
 	}));

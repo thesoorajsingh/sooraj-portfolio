@@ -20,10 +20,11 @@ export const metadata: Metadata = {
 	description: 'Engineer, Writer and an Optimist',
 	openGraph: {
 		title: 'Sooraj Singh',
-		description: 'Engineer, Writer and an Optimist.',
+		description:
+			'Software Engineer, Writer, Techno-Optimist and a Coffee Addict',
 		url: 'https://thesoorajsingh.me',
 		siteName: 'Sooraj Singh',
-		locale: 'en_US',
+		locale: 'en_IN',
 		type: 'website',
 	},
 	robots: {
