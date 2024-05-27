@@ -4,7 +4,7 @@ import React from 'react';
 function People() {
 	return (
 		<div>
-			<h1 className='text-3xl font-mono'>people i work with.</h1>
+			<h1 className='text-2xl font-mono'>people i work with.</h1>
 			<p className='mt-8 text-lg'>
 				I have some extremely talented and passionate friends who are always
 				looking to solve the next big problem!

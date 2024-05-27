@@ -106,12 +106,12 @@ async function Views({ slug }: { slug: string }) {
 export default function Page() {
 	return (
 		<section>
-			<h1 className='font-medium text-2xl mb-8 leading-16 font-["monospace"] md:flex items-center gap-1'>
+			<h1 className='font-medium text-2xl mb-8 leading-16 font-mono tracking-tight md:flex'>
 				sup, i'm sooraj 👋 and i'm{' '}
 				<Link
 					href={'https://read.cv/thesoorajsingh'}
 					target='_blank'
-					className='underline hover:text-green-300 transition-all duration-500 ease-in-out'
+					className='underline hover:text-green-300 transition-all duration-500 ease-in-out md:ml-3'
 				>
 					{' '}
 					open to work!

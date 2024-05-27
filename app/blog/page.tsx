@@ -11,6 +11,7 @@ export default function BlogPage() {
 
 	return (
 		<section>
+			<h2 className='text-2xl font-mono mb-8 font-medium'>writings</h2>
 			{blogs
 				.sort((a, b) => {
 					if (

@@ -25,7 +25,9 @@ async function Stars() {
 export default function WorkPage() {
 	return (
 		<section>
-			<h1 className='font-medium text-2xl mb-8 tracking-tighter'>my work</h1>
+			<h1 className='font-medium text-2xl mb-8 tracking-tighter font-mono'>
+				my work
+			</h1>
 			<div className='prose prose-neutral dark:prose-invert'>
 				<p>
 					I enjoy building products that make a difference to people's lives.
@@ -33,7 +35,9 @@ export default function WorkPage() {
 					them build experiences that are fast, scalable and delightful.
 				</p>
 				<hr className='my-6 border-neutral-100 dark:border-neutral-800' />
-				<h2 className='font-medium text-xl mb-1 tracking-tighter'>Thena AI</h2>
+				<h2 className='font-medium text-xl mb-1 tracking-tighter font-mono'>
+					Thena AI
+				</h2>
 				<p className='text-neutral-600 dark:text-neutral-400 text-sm'>
 					Software Engineer 2, Mar 2024 - July 2024
 				</p>
@@ -55,7 +59,7 @@ export default function WorkPage() {
 						validations.
 					</li>
 				</ul>
-				<h2 className='font-medium text-xl mb-1 tracking-tighter'>
+				<h2 className='font-medium text-xl mb-1 tracking-tighter font-mono'>
 					Tap Invest
 				</h2>
 				<p className='text-neutral-600 dark:text-neutral-400 text-sm'>
@@ -93,7 +97,7 @@ export default function WorkPage() {
 					</li>
 				</ul>
 				<hr className='my-6 border-neutral-100 dark:border-neutral-800' />
-				<h2 className='font-medium text-xl mb-1 tracking-tighter'>
+				<h2 className='font-medium text-xl mb-1 tracking-tighter font-mono'>
 					Nothing, India
 				</h2>
 				<p className='text-neutral-600 dark:text-neutral-400 text-sm'>
@@ -114,7 +118,9 @@ export default function WorkPage() {
 					</Link>
 				</p>
 				<hr className='my-6 border-neutral-100 dark:border-neutral-800' />
-				<h2 className='font-medium text-xl mb-1 tracking-tighter'>Capx Fi</h2>
+				<h2 className='font-medium text-xl mb-1 tracking-tighter font-mono'>
+					CapxFi
+				</h2>
 				<p className='text-neutral-600 dark:text-neutral-400 text-sm'>
 					Software Engineer Intern, 2022
 				</p>
@@ -129,7 +135,7 @@ export default function WorkPage() {
 					to know more about these projects {':)'}
 				</p>
 				<hr className='my-6 border-neutral-100 dark:border-neutral-800' />
-				<h2 className='font-medium text-xl mb-1 tracking-tighter'>
+				<h2 className='font-medium text-xl mb-1 tracking-tighter font-mono'>
 					Sarci, India
 				</h2>
 				<p className='text-neutral-600 dark:text-neutral-400 text-sm'>
