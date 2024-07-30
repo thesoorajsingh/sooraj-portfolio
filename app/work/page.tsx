@@ -1,20 +1,4 @@
-"use client";
-import type { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Work",
-  description: "A summary of my work and contributions.",
-  openGraph: {
-    type: "article",
-    url: `https://thesoorajsingh/work`,
-    images: [
-      {
-        url: `/ogs/og-bg-work.png`,
-      },
-    ],
-  },
-};
 
 async function Followers() {
   let res = await fetch(
