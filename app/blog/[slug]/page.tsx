@@ -116,7 +116,7 @@ export default function Blog({ params }) {
         {post.metadata.title}
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400 lowercase">
           {formatDate(post.metadata.publishedAt)}
           <a
             href={post.metadata.substackLink ?? "/404"}
