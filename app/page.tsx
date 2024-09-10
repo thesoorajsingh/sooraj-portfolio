@@ -106,7 +106,7 @@ async function Views({ slug }: { slug: string }) {
 
 export default function Page() {
   return (
-    <section>
+    <section className="!lowercase">
       <h1 className="font-medium text-3xl mb-8 leading-16 font-mono tracking-tight md:flex">
         sup, i'm sooraj 👋
       </h1>
