@@ -11,7 +11,7 @@ async function Followers() {
 
 export default function WorkPage() {
   return (
-    <section>
+    <section className="!lowercase">
       <h1 className="font-medium text-3xl mb-8 tracking-tighter font-mono">
         my work
       </h1>
@@ -25,6 +25,16 @@ export default function WorkPage() {
           them build experiences that are fast, scalable and delightful.
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter font-mono">
+          Plum
+        </h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+          Software Engineer 2, jun 2024 - present
+        </p>
+        <p>
+          helping make insurance, esy, accesible and inclusive for the best
+          startups and enterprises in india
+        </p>
         <h2 className="font-medium text-xl mb-1 tracking-tighter font-mono">
           Thena AI
         </h2>
@@ -53,7 +63,7 @@ export default function WorkPage() {
           Tap Invest
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Software Engineer - Frontend, Sept 2022 - Mar 2024
+          founding engineer, Sept 2022 - Mar 2024
         </p>
         <ul>
           <li>
