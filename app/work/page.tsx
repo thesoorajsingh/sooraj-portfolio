@@ -29,17 +29,17 @@ export default function WorkPage() {
           Plum
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Software Engineer 2, jun 2024 - present
+          Software Engineer 2 / jun 2024 - present
         </p>
         <p>
-          helping make insurance, esy, accesible and inclusive for the best
-          startups and enterprises in india
+          helping make insurance, easy, accesible and inclusive for the best
+          startups and enterprises in india :)
         </p>
         <h2 className="font-medium text-xl mb-1 tracking-tighter font-mono">
           Thena AI
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Software Engineer 2, Mar 2024 - July 2024
+          Software Engineer 2 / Mar 2024 - July 2024
         </p>
         <p>
           Worked towards a complete rewrite of the product over a single sprint.
@@ -63,7 +63,7 @@ export default function WorkPage() {
           Tap Invest
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          founding engineer, Sept 2022 - Mar 2024
+          founding engineer / Sept 2022 - Mar 2024
         </p>
         <ul>
           <li>
@@ -101,7 +101,7 @@ export default function WorkPage() {
           Nothing, India
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Freelance Consultant / Lead Frontend Engineer, 2022
+          Freelance Consultant // Lead Frontend Engineer / 2022
         </p>
         <p>
           I was the solo frontend engineer for building Nothing India's Student
@@ -122,7 +122,7 @@ export default function WorkPage() {
           CapxFi
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Software Engineer Intern, 2022
+          Software Engineer Intern / 2022
         </p>
         <p>
           Built, documented, tested and deployed 2 functional dApps of Capx
@@ -139,7 +139,7 @@ export default function WorkPage() {
           Sarci, India
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Automation Engineer Intern, 2021
+          Automation Engineer Intern / 2021
         </p>
         <p>
           Built, Deployed and Documented Azure serverless functions both code
