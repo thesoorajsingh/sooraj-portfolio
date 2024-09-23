@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import Link from "next/link";
+import { Link } from "next-transition-router";
 import Image from "next/image";
 import ViewCounter from "app/blog/view-counter";
 import capx from "public/capxico.png";
@@ -8,6 +8,7 @@ import tap from "public/tapico.png";
 import thena from "public/thena.png";
 import plum from "public/plum.svg";
 import { getViewsCount } from "app/db/queries";
+import { Reveal } from "components/reveal";
 
 function Badge(props) {
   return (

@@ -1,3 +1,4 @@
+import { Reveal } from "components/reveal";
 import Link from "next/link";
 
 async function Followers() {
@@ -12,12 +13,9 @@ async function Followers() {
 export default function WorkPage() {
   return (
     <section className="!lowercase">
-      <h1 className="font-medium text-3xl mb-8 tracking-tighter font-mono">
+      <h1 className="font-medium text-3xl mb-4 tracking-tighter font-mono">
         my work
       </h1>
-      <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-        {Followers()} on github
-      </p>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
           I enjoy building products that make a difference to people's lives.
