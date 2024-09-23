@@ -18,7 +18,7 @@ export function Reveal({
     <motion.div
       // @ts-expect-error
       ref={ref}
-      initial={false} // Disable initial animation
+      initial={true} // Disable initial animation
       animate={isReady ? { scale: 1 } : {}} // Animate to scale 1 when ready
       transition={{ duration: 0.8, ease: "easeOut" }} // Transition settings
       {...rest}

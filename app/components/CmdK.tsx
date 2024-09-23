@@ -1,84 +1,44 @@
-'use client';
-import './cmdk.css';
-import CommandPalette, {
-	filterItems,
-	getItemIndex,
-	useHandleOpenCommandPalette,
-} from 'react-cmdk';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+"use client";
+import { Command } from "cmdk";
+import { useEffect, useState } from "react";
 
-const Example = () => {
-	const [open, setOpen] = useState<boolean>(false);
-	const [search, setSearch] = useState('');
-	const router = useRouter();
+const CommandMenu = () => {
+  const [open, setOpen] = useState(false);
 
-	useHandleOpenCommandPalette(setOpen);
+  // Toggle the menu when ⌘K is pressed
+  useEffect(() => {
+    const down = (e) => {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        setOpen((open) => !open);
+      }
+    };
 
-	const filteredItems = filterItems(
-		[
-			{
-				heading: 'Navigate',
-				id: 'home',
-				items: [
-					{
-						id: 'home',
-						children: 'Home',
-						icon: 'HomeIcon',
-						onClick: () => router.push('/'),
-					},
-					{
-						id: 'work',
-						children: 'Work',
-						icon: 'BriefcaseIcon',
-						// href: '/work',
-						onClick: () => router.push('/work'),
-					},
-					{
-						id: 'blog',
-						children: 'Blog',
-						icon: 'PencilIcon',
-						onClick: () => router.push('/blog'),
-					},
-				],
-			},
-		],
-		search
-	);
+    document.addEventListener("keydown", down);
+    return () => document.removeEventListener("keydown", down);
+  }, []);
 
-	return (
-		<CommandPalette
-			onChangeSearch={setSearch}
-			onChangeOpen={setOpen}
-			search={search}
-			isOpen={open}
-			page={'root'}
-			placeholder='Looking for something?'
-		>
-			<CommandPalette.Page id='root' onEscape={() => setOpen(false)}>
-				{filteredItems.length ? (
-					filteredItems.map((list) => (
-						<CommandPalette.List key={list.id} heading={list.heading}>
-							{list.items.map(({ id, ...rest }) => (
-								<CommandPalette.ListItem
-									key={id}
-									index={getItemIndex(filteredItems, id)}
-									showType={false}
-									{...rest}
-								/>
-							))}
-						</CommandPalette.List>
-					))
-				) : (
-					<CommandPalette.FreeSearchAction />
-				)}
-			</CommandPalette.Page>
+  return (
+    <Command.Dialog
+      open={open}
+      onOpenChange={setOpen}
+      label="Global Command Menu"
+    >
+      <Command.Input />
+      <Command.List>
+        <Command.Empty>No results found.</Command.Empty>
 
-			<CommandPalette.Page children id='projects'>
-				{/* Projects page */}
-			</CommandPalette.Page>
-		</CommandPalette>
-	);
+        <Command.Group heading="Letters">
+          <Command.Item>a</Command.Item>
+          <Command.Item>b</Command.Item>
+          <Command.Separator />
+          <Command.Item>c</Command.Item>
+        </Command.Group>
+
+        <Command.Item>Apple</Command.Item>
+      </Command.List>
+    </Command.Dialog>
+  );
 };
 
-export default Example;
+export default CommandMenu;
