@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import Link from "next/link";
+import { Link } from "next-transition-router";
 import Image from "next/image";
 import ViewCounter from "app/blog/view-counter";
 import capx from "public/capxico.png";
@@ -8,6 +8,7 @@ import tap from "public/tapico.png";
 import thena from "public/thena.png";
 import plum from "public/plum.svg";
 import { getViewsCount } from "app/db/queries";
+import { Reveal } from "components/reveal";
 
 function Badge(props) {
   return (
@@ -106,138 +107,140 @@ async function Views({ slug }: { slug: string }) {
 
 export default function Page() {
   return (
-    <section className="!lowercase">
-      <h1 className="font-medium text-3xl mb-8 leading-16 font-mono tracking-tight md:flex">
-        sup, i'm sooraj 👋
-      </h1>
-      <p className="prose prose-neutral dark:prose-invert">
-        {`I'm a frontend engineer, optimist, and a coffee enthusiast. I've `}
-        <Link href="/work">worked</Link>
-        {` with multiple startups and helped them build products that scale, like `}
-        <span className="not-prose">
-          <Badge href="https://tapinvest.in">
-            <Image
-              src={tap}
-              alt="Tap Invest"
-              height={16}
-              width={16}
-              className={"pr-1"}
-            />
-            Tap Invest
-          </Badge>
-        </span>
-        {` where we were democratising alternate investment methods`} {` `}
-        {`and `}
-        <span className="not-prose">
-          <Badge href="https://thena.ai">
-            <Image
-              src={thena}
-              alt="Thena AI"
-              height={18}
-              width={18}
-              className={"pr-1"}
-            />
-            Thena
-          </Badge>
-        </span>
-        {` where we were solving slack support at scale. `}
-        {`Before this, I've helped brands like `}
-        <span className="not-prose">
-          <Badge href="https://capx.fi">
-            <Image
-              src={capx}
-              alt="CapXFi"
-              height={16}
-              width={16}
-              className={"pr-1"}
-            />
-            CapXFi
-          </Badge>
-        </span>
-        {` and `}
-        <span className="not-prose">
-          <Badge href="https://nothing.tech">
-            <Image
-              src={nothing}
-              alt="Nothing"
-              height={16}
-              width={16}
-              className={"pr-1"}
-            />
-            Nothing
-          </Badge>
-        </span>
-        {` build scalable products, fast.`}
-      </p>
-
-      <div className="prose prose-neutral dark:prose-invert ">
-        <p>
-          Right now, I&apos;m working with{" "}
+    <Reveal>
+      <section className="!lowercase">
+        <h1 className="font-medium text-3xl mb-8 leading-16 font-mono tracking-tight md:flex">
+          sup, i'm sooraj 👋
+        </h1>
+        <p className="prose prose-neutral dark:prose-invert">
+          {`I'm a frontend engineer, optimist, and a coffee enthusiast. I've `}
+          <Link href="/work">worked</Link>
+          {` with multiple startups and helped them build products that scale, like `}
           <span className="not-prose">
-            <Badge href={"https://plumhq.com"}>
+            <Badge href="https://tapinvest.in">
               <Image
-                src={plum}
-                alt={"plum-logo"}
-                width={16}
+                src={tap}
+                alt="Tap Invest"
                 height={16}
-                className="pr-1"
+                width={16}
+                className={"pr-1"}
               />
-              Plum
+              Tap Invest
             </Badge>
-          </span>{" "}
-          where we&apos;re making insurance easy, accessible and inclusive!
+          </span>
+          {` where we were democratising alternate investment methods`} {` `}
+          {`and `}
+          <span className="not-prose">
+            <Badge href="https://thena.ai">
+              <Image
+                src={thena}
+                alt="Thena AI"
+                height={18}
+                width={18}
+                className={"pr-1"}
+              />
+              Thena
+            </Badge>
+          </span>
+          {` where we were solving slack support at scale. `}
+          {`Before this, I've helped brands like `}
+          <span className="not-prose">
+            <Badge href="https://capx.fi">
+              <Image
+                src={capx}
+                alt="CapXFi"
+                height={16}
+                width={16}
+                className={"pr-1"}
+              />
+              CapXFi
+            </Badge>
+          </span>
+          {` and `}
+          <span className="not-prose">
+            <Badge href="https://nothing.tech">
+              <Image
+                src={nothing}
+                alt="Nothing"
+                height={16}
+                width={16}
+                className={"pr-1"}
+              />
+              Nothing
+            </Badge>
+          </span>
+          {` build scalable products, fast.`}
         </p>
-      </div>
 
-      <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          I've been trying my hand at <Link href="/blog">writing</Link> articles
-          that aim at helping people be better engineers regardless of their
-          career choices. I'll probably publish them soon enough
-        </p>
-      </div>
+        <div className="prose prose-neutral dark:prose-invert ">
+          <p>
+            Right now, I&apos;m working with{" "}
+            <span className="not-prose">
+              <Badge href={"https://plumhq.com"}>
+                <Image
+                  src={plum}
+                  alt={"plum-logo"}
+                  width={16}
+                  height={16}
+                  className="pr-1"
+                />
+                Plum
+              </Badge>
+            </span>{" "}
+            where we&apos;re making insurance easy, accessible and inclusive!
+          </p>
+        </div>
 
-      <div className="prose prose-neutral dark:prose-invert">
-        <article className={"text-xs"}>
-          This page is served statically using{" "}
-          <Link href={"https://www.nextjs.org"} target={"_blank"}>
-            Next.js
-          </Link>{" "}
-          and{" "}
-          <Link href={"https://www.vercel.com"} target={"_blank"}>
-            Vercel
-          </Link>
-          .
-        </article>
-        <article className={"text-xs sm:hidden lg:block"}>
-          Press ⌘+K to navigate with your keyboard
-        </article>
-      </div>
+        <div className="prose prose-neutral dark:prose-invert">
+          <p>
+            I've been trying my hand at <Link href="/blog">writing</Link>{" "}
+            articles that aim at helping people be better engineers regardless
+            of their career choices. I'll probably publish them soon enough
+          </p>
+        </div>
 
-      <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://twitter.com/whotooksooraj"
-          >
-            <ArrowIcon />
-            <p className="h-7 ml-2">follow me</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://soorajsingh.substack.com"
-          >
-            <ArrowIcon />
-            <p className="h-7 ml-2">get email updates</p>
-          </a>
-        </li>
-      </ul>
-    </section>
+        <div className="prose prose-neutral dark:prose-invert">
+          <article className={"text-xs"}>
+            This page is served statically using{" "}
+            <Link href={"https://www.nextjs.org"} target={"_blank"}>
+              Next.js
+            </Link>{" "}
+            and{" "}
+            <Link href={"https://www.vercel.com"} target={"_blank"}>
+              Vercel
+            </Link>
+            .
+          </article>
+          <article className={"text-xs sm:hidden lg:block"}>
+            Press ⌘+K to navigate with your keyboard
+          </article>
+        </div>
+
+        <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
+          <li>
+            <a
+              className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://twitter.com/whotooksooraj"
+            >
+              <ArrowIcon />
+              <p className="h-7 ml-2">follow me</p>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://soorajsingh.substack.com"
+            >
+              <ArrowIcon />
+              <p className="h-7 ml-2">get email updates</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </Reveal>
   );
 }
