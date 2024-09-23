@@ -210,9 +210,9 @@ export default function Page() {
           </Link>
           .
         </article>
-        <article className={"text-xs sm:hidden lg:block"}>
+        {/* <article className={"text-xs sm:hidden lg:block"}>
           Press ⌘+K to navigate with your keyboard
-        </article>
+        </article> */}
       </div>
 
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
