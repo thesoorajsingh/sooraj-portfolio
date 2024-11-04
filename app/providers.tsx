@@ -16,7 +16,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         opacity: [0, 1],
         filter: "blur(0px)",
       },
-      { duration: 0.5, ease: "easeOut" } // Added easing
+      { duration: 0.35, ease: "easeInOut" }
     );
   }, []);
 
@@ -32,8 +32,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
             filter: "blur(8px)",
           },
           {
-            duration: 0.3,
-            ease: "easeIn",
+            ease: "easeInOut",
             onComplete: next,
           } // Added easing
         );
@@ -47,8 +46,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
             filter: "blur(0px)",
           },
           {
-            duration: 0.5,
-            ease: "easeOut",
+            duration: 0.35,
+            ease: "easeInOut",
             onComplete: next,
           } // Added easing
         );
