@@ -30,12 +30,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
           {
             opacity: [1, 0],
             filter: "blur(8px)",
-            transform: "translateY(36px)",
           },
           {
             duration: 0.3,
             ease: "easeIn",
-            transform: "translateY(0)",
             onComplete: next,
           } // Added easing
         );
@@ -47,12 +45,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
           {
             opacity: [0, 1],
             filter: "blur(0px)",
-            transform: "translateY(0)",
           },
           {
             duration: 0.5,
             ease: "easeOut",
-            transform: ["translateY(36px)"],
             onComplete: next,
           } // Added easing
         );
