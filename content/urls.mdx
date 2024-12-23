@@ -1,0 +1,81 @@
+---
+title: what makes u(rl) beautiful
+publishedAt: '2024-12-24'
+summary: 'url design & why it matters'
+substackLink: 'https://soorajsingh.substack.com/p/what-makes-url-beautiful'
+---
+
+URLs or Uniform Resource Locators are a lot of times the first [touchpoints](https://arc.net/l/quote/uwsrcldd) that bring a potential customer to your product/service. a well designed URL is one that is going to keep your product on their mind, well assuming it's a useful product. [they've been around since before the internet](https://blog.cloudflare.com/the-history-of-the-url/) and are now an important piece in what you build.
+
+## what's in a url?
+
+before i step into why it's a good idea for you to give a damn about your product's urls, here's what one of them looks like:
+
+```
+https://store.acme.org/products/health?product=lip-balms&color=red#reviews
+```
+
+you must've seen this with every website you visit, but what makes it a url?
+
+- https:// -> **the protocol** (route or method) that your computer and the server (someone else's computer that has the website you're trying to get to) use to talk to each other
+- store -> **the subdomain**, identifies a specific section of the domain, in this case: the store
+- acme.org -> **the domain**, primary identifier of the website you're trying to visit. like it's name
+- /products/health -> **the path**, pointing to the specific resource in the website you want to access, in this case: health products
+- ?product=lip-balms&color=red -> **the query parameters**, labels and values that tell the server a little more about what you're looking for, in this case: it tells the server you're looking red lip balms
+- \#reviews -> **the fragment / hash**, a shortcut that takes you directly to a specific part of the website, in this case: the reviews
+
+## what makes a url ugly?
+
+ugly urls are those that your user can't recall after they've clicked it. here's an example:
+
+```
+https://acme.org/login-or-signup?user-code=merry%20christmas
+```
+
+this is hard to recall, read or remember because the path is unnecessary long, the query parameter isn't very clear about why it's there and the %20 (which comes from [url encoding](https://locationiq.com/glossary/url-encoding) replacing the space in the text) adds to the confusion.
+
+a good example of this is usually in your family group when someone forwards a link to buy something and you're hit with:
+
+```
+https://www.somerealestatesite.com/homes/for_sale/search_results.asp
+```
+
+as a programmer, i am sympathetic. as a user, i have zero sympathy
+
+back at acme, your user can't remember if the right order was login first or signup and when they're off their desktop, they're not going to come back to it when they forget while telling their friends over whatsapp what the link they visited earlier was, so they google for it, which brings us to our next part
+
+## why should i make the urls beautiful?
+
+your website, product or service is going to be visited by people and search engines looking for information about what you're selling. the address to access this information, if easy to remember, is going to stick easier by them.
+
+search engines index your webpages better if you construct your url well. `/tennis-shoes` is going to be ranked better in a search than `/tennisshoes`
+
+people remember your urls better the more concise, to the point and easy to remember they are. `product.com/pricing` is going to stick in a potential user's mind better than `product.com/plans-and-features`. google even [talks about](https://arc.net/l/quote/knylhvoo) how clear, descriptive urls help them help you.
+
+## what makes u(rl) beautiful
+
+simple, concise urls go a long way in helping capture credibility, trust and maybe even love for you product. going back to the ugly url we spoke of earlier, here's how it could be a little more beautiful:
+
+```
+https://acme.org/login?ref=christmas
+```
+
+the smaller, more concise path tells me where it's taking me while the query parameter does it's job of letting the server know of my discount code while also being descriptive, yet concise, enough to tell me why it's there and what it's function is.
+
+[urls are a part of your ui](https://www.hanselman.com/blog/urls-are-ui) and how you structure them, use them and expand on them plays a crucial part on how your product's story is told.
+
+another good example would be how github has beautifully constructed urls that are shareable, concise and readable:
+
+```
+https://github.com/thesoorajsingh
+```
+
+while onedrive is a readability nightmare:
+
+```
+https://onedrive.live.com/?id=CD0633A7367371152C%21172&cid=CD06A7367371152C
+```
+
+weirdly, both are owned by the same entity, really makes you think huh
+
+that's it for now, go make a beautiful url :)
