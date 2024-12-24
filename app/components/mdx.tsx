@@ -114,7 +114,13 @@ function ConsCard({ title, cons }) {
 
 function Code({ children, ...props }) {
 	let codeHTML = children;
-	return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
+	return (
+		<code
+			dangerouslySetInnerHTML={{ __html: codeHTML }}
+			{...props}
+			className='text-gray-800 dark:text-gray-400'
+		/>
+	);
 }
 
 function slugify(str) {
