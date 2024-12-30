@@ -1,44 +1,41 @@
-"use client";
-import { Command } from "cmdk";
-import { useEffect, useState } from "react";
+'use client';
+import {
+	CommandDialog,
+	CommandEmpty,
+	CommandGroup,
+	CommandInput,
+	CommandItem,
+	CommandList,
+} from '@/components/ui/command';
+import { useEffect, useState } from 'react';
 
 const CommandMenu = () => {
-  const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(false);
 
-  // Toggle the menu when ⌘K is pressed
-  useEffect(() => {
-    const down = (e) => {
-      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
-        e.preventDefault();
-        setOpen((open) => !open);
-      }
-    };
+	useEffect(() => {
+		const down = (e) => {
+			if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
+				e.preventDefault();
+				setOpen((open) => !open);
+			}
+		};
+		document.addEventListener('keydown', down);
+		return () => document.removeEventListener('keydown', down);
+	}, []);
 
-    document.addEventListener("keydown", down);
-    return () => document.removeEventListener("keydown", down);
-  }, []);
-
-  return (
-    <Command.Dialog
-      open={open}
-      onOpenChange={setOpen}
-      label="Global Command Menu"
-    >
-      <Command.Input />
-      <Command.List>
-        <Command.Empty>No results found.</Command.Empty>
-
-        <Command.Group heading="Letters">
-          <Command.Item>a</Command.Item>
-          <Command.Item>b</Command.Item>
-          <Command.Separator />
-          <Command.Item>c</Command.Item>
-        </Command.Group>
-
-        <Command.Item>Apple</Command.Item>
-      </Command.List>
-    </Command.Dialog>
-  );
+	return (
+		<CommandDialog open={open} onOpenChange={setOpen}>
+			<CommandInput placeholder='Type a command or search...' />
+			<CommandList>
+				<CommandEmpty>No results found.</CommandEmpty>
+				<CommandGroup heading='Suggestions'>
+					<CommandItem>Calendar</CommandItem>
+					<CommandItem>Search Emoji</CommandItem>
+					<CommandItem>Calculator</CommandItem>
+				</CommandGroup>
+			</CommandList>
+		</CommandDialog>
+	);
 };
 
 export default CommandMenu;
